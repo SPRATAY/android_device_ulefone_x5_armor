@@ -103,8 +103,6 @@ TW_EXCLUDE_TWRPAPP := true
 
 # Resolution
 TW_THEME := portrait_hdpi
-DEVICE_SCREEN_WIDTH := 720
-DEVICE_SCREEN_HEIGHT := 1440
 
 # Display
 TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
