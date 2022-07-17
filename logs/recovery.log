@@ -1,0 +1,1310 @@
+Starting TWRP 3.6.2_11-0-6d158641 on Sun Jul 17 18:05:07 2022
+ (pid 329)
+I:=> product model: 'Armor X5'
+I:=> using device id: 'Armor_X5'
+RECOVERY_SDCARD_ON_DATA := true
+I:Lun file '/sys/class/android_usb/android0/f_mass_storage/lun0/file' does not exist, USB storage mode disabled
+TW_INCLUDE_CRYPTO := true
+I:TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
+I:Found brightness file at '/sys/class/leds/lcd-backlight/brightness'
+I:TWFunc::Set_Brightness: Setting brightness control to 255
+I:TW_EXCLUDE_ENCRYPTED_BACKUPS := true
+I:LANG: en
+Starting the UI...
+setting DRM_FORMAT_RGB565 and GGL_PIXEL_FORMAT_RGB_565
+cannot find/open a drm device: No such file or directory
+fb0 reports (possibly inaccurate):
+  vi.bits_per_pixel = 32
+  vi.red.offset   =   0   .length =   8
+  vi.green.offset =   8   .length =   8
+  vi.blue.offset  =  16   .length =   8
+setting GGL_PIXEL_FORMAT_RGBA_8888
+double buffered
+framebuffer: 0 (720 x 1440)
+Using fbdev graphics.
+I:TWFunc::Set_Brightness: Setting brightness control to 255
+TW_SCREEN_BLANK_ON_BOOT := true
+I:TWFunc::Set_Brightness: Setting brightness control to 0
+I:TWFunc::Set_Brightness: Setting brightness control to 255
+I:Loading package: splash (/twres/splash.xml)
+I:Load XML directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/splash.xml' directly
+I:Checking resolution...
+I:Scaling theme width 0.666667x and height 0.750000x, offsets x: 0 y: 0 w: 0 h: 0
+I:Loading resources...
+I:Loading variables...
+I:Loading mouse cursor...
+I:Loading pages...
+I:Loading page splash
+I:Switching packages (splash)
+I:Loading package: TWRP (/TWRP/theme/ui.zip)
+I:Loading zip theme
+I:Loading package: TWRP (/twres/ui.xml)
+I:Load XML directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/zh_TW.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/zh_CN.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/uk.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/tr.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/sv.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/sl.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/sk.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/ru.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/pt_PT.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/pt_BR.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/pl.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/nl.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/ja.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/it.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/id.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/hu.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/fr.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/es.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/en.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/el.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/de.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/cz.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/en.xml' directly
+parsing languageFile
+parsing languageFile done
+I:PageManager::LoadFileToBuffer loading filename: '/twres/ui.xml' directly
+I:Checking resolution...
+I:Scaling theme width 0.666667x and height 0.750000x, offsets x: 0 y: 0 w: 0 h: 0
+I:Loading resources...
+I:Failed to load image from indeterminate013, error -1
+I:Loading variables...
+I:Loading mouse cursor...
+I:Loading pages...
+I:Including file: /twres/portrait.xml...
+I:PageManager::LoadFileToBuffer loading filename: '/twres/portrait.xml' directly
+I:Loading resources...
+I:Loading variables...
+I:Loading mouse cursor...
+I:Loading pages...
+I:Loading page main
+I:Loading page main2
+I:Loading page install
+I:Loading page flash_confirm
+I:Loading page flash_zip
+I:Loading page flash_done
+I:Loading page flash_sleep_and_reboot
+I:Loading page flashimage_confirm
+I:Loading page clear_vars
+I:Loading page reboot_system_routine
+I:Loading page confirm_action
+I:Loading page action_page
+I:Loading page singleaction_page
+I:Loading page action_complete
+I:Loading page filecheck
+I:Loading page rebootcheck
+I:Loading page wipe
+I:Loading page advancedwipe
+I:Loading page formatdata
+I:Loading page formatdata_confirm
+I:Loading page checkpartitionlist
+I:Loading page partitionoptions
+I:Loading page refreshfilesystem
+I:Loading page selectfilesystem
+I:Loading page backup
+I:Loading page multiuser_warning
+I:Loading page backup_options
+I:Loading page backupname1
+I:Loading page backupname2
+I:Loading page backupencryption
+I:Loading page backupencryption2
+I:Loading page checkbackuppassword
+I:Loading page backup_run
+I:Loading page restore
+I:Unable to open '//TWRP/BACKUPS/Armor_X5'
+I:Loading page restore_force
+I:Unable to open '//TWRP/BACKUPS'
+I:Loading page restore_read
+I:Loading page restore_decrypt
+I:Loading page try_restore_decrypt
+I:Loading page restore_select
+I:Loading page renamebackup
+I:Loading page restore_run
+I:Loading page mount
+I:Loading page usb_mount
+I:Loading page usb_umount
+I:Loading page system_readonly_check
+I:Loading page fastbootreboot
+I:Loading page reboot
+I:Loading page installapp
+I:Loading page system_readonly
+I:Loading page settings
+I:Loading page settings_timezone
+I:Loading page settings_screen
+I:Loading page settings_vibration
+I:Loading page settings_language
+I:Loading page copylog
+I:Loading page advanced
+I:Loading page partsdcardsel
+I:Loading page partsdcardcheck
+I:Loading page partsdcard
+I:Loading page htcdumlock
+I:Loading page repackselect
+I:Loading page repackconfirm
+I:Loading page lock
+I:Loading page filemanagerlist
+I:Loading page filemanageroptions
+I:Loading page choosedestinationfolder
+I:Loading page filemanagerrenamefile
+I:Loading page filemanagerrenamefolder
+I:Loading page filemanagerchmod
+I:Loading page filemanagerconfirm
+I:Loading page filemanageraction
+I:Loading page decrypt
+I:Loading page decrypt_pattern
+I:Loading page decrypt_pin
+I:Loading page trydecrypt
+I:Loading page canceldecrypt
+I:Loading page terminalcommand
+I:Loading page fastboot
+I:Loading page sideload
+I:Loading page fixcontexts
+I:Loading page slideout
+I:Loading page select_storage
+I:Loading page select_language
+I:Loading page decrypt_users
+I:Loading page changeTwrpFolder
+I:Loading page restore_keymaster
+I:Set page: 'clear_vars'
+I:Set page: 'main2'
+I:Switching packages (TWRP)
+I:Startup Commands: 
+I:failed to read default fstab
+ro.boot.bootreason=rtc
+ro.boottime.adbd=2307816769
+ro.boottime.init=1819236846
+ro.boottime.init.selinux=111598616
+ro.boottime.init.first_stage=25138307
+ro.boottime.init.cold_boot_wait=236
+ro.boottime.logd=2277925384
+ro.boottime.ueventd=2030693230
+ro.boottime.recovery=2303943230
+ro.boottime.servicemanager=2283224692
+ro.boottime.hwservicemanager=2280720922
+ro.boottime.vndservicemanager=2285979615
+ro.cold_boot_done=true
+ro.bionic.arch=arm64
+ro.bionic.2nd_arch=arm
+ro.bionic.cpu_variant=generic
+ro.bionic.2nd_cpu_variant=generic
+dalvik.vm.minidebuginfo=true
+dalvik.vm.dex2oat-minidebuginfo=true
+dalvik.vm.dex2oat-max-image-block-size=524288
+dalvik.vm.dex2oat-resolve-startup-strings=true
+dalvik.vm.dex2oat-updatable-bcp-packages-file=/system/etc/updatable-bcp-packages.txt
+debug.atrace.tags.enableflags=0
+ro.sys.usb.mtp.whql.enable=0
+ro.sys.usb.storage.type=mtp
+ro.twrp.boot=1
+ro.twrp.target.devices=Armor_X5_Q
+ro.twrp.version=3.6.2_11-0
+ro.wifi.channels=
+ro.allow.mock.location=1
+ro.build.flavor=twrp_Armor_X5_Q-eng
+ro.build.selinux=1
+ro.build.version.all_codenames=REL
+ro.build.version.preview_sdk_fingerprint=REL
+ro.build.version.min_supported_target_sdk=23
+ro.build.characteristics=default
+ro.iorapd.enable=true
+ro.kernel.android.checkjni=1
+ro.system.build.id=RQ1A.210205.004
+ro.system.build.date=Sun Jul 17 16:39:06 UTC 2022
+ro.system.build.date.utc=1658075946
+ro.system.build.tags=test-keys
+ro.system.build.type=eng
+ro.system.build.version.sdk=30
+ro.system.build.version.release=11
+ro.system.build.version.incremental=eng.runner.20220717.164323
+ro.system.build.version.release_or_codename=16.1.0
+ro.system.build.fingerprint=Ulefone/twrp_Armor_X5_Q/Armor_X5_Q:16.1.0/RQ1A.210205.004/runner07171639:eng/test-keys
+ro.treble.enabled=false
+ro.product.build.id=RQ1A.210205.004
+ro.product.build.date=Sun Jul 17 16:39:06 UTC 2022
+ro.product.build.date.utc=1658075946
+ro.product.build.tags=test-keys
+ro.product.build.type=eng
+ro.product.build.version.sdk=30
+ro.product.build.version.release=11
+ro.product.build.version.incremental=eng.runner.20220717.164323
+ro.product.build.version.release_or_codename=16.1.0
+ro.product.build.fingerprint=Ulefone/twrp_Armor_X5_Q/Armor_X5_Q:16.1.0/RQ1A.210205.004/runner07171639:eng/test-keys
+ro.product.locale=en-US
+ro.product.system.name=twrp_Armor_X5_Q
+ro.product.system.brand=Ulefone
+ro.product.system.model=Armor X5
+ro.product.system.device=Armor_X5_Q
+ro.product.system.manufacturer=ulefone
+ro.product.product.name=twrp_Armor_X5_Q
+ro.product.product.brand=Ulefone
+ro.product.product.model=Armor X5
+ro.product.product.device=Armor_X5_Q
+ro.product.product.manufacturer=ulefone
+ro.product.system_ext.name=twrp_Armor_X5_Q
+ro.product.system_ext.brand=Ulefone
+ro.product.system_ext.model=Armor X5
+ro.product.system_ext.device=Armor_X5_Q
+ro.product.system_ext.manufacturer=ulefone
+ro.mediatek.chip_ver=S01
+ro.mediatek.platform=MT6765
+ro.system_ext.build.id=RQ1A.210205.004
+ro.system_ext.build.date=Sun Jul 17 16:39:06 UTC 2022
+ro.system_ext.build.date.utc=1658075946
+ro.system_ext.build.tags=test-keys
+ro.system_ext.build.type=eng
+ro.system_ext.build.version.sdk=30
+ro.system_ext.build.version.release=11
+ro.system_ext.build.version.incremental=eng.runner.20220717.164323
+ro.system_ext.build.version.release_or_codename=16.1.0
+ro.system_ext.build.fingerprint=Ulefone/twrp_Armor_X5_Q/Armor_X5_Q:16.1.0/RQ1A.210205.004/runner07171639:eng/test-keys
+ro.postinstall.fstab.prefix=/system
+ro.actionable_compatible_property.enabled=false
+init.svc.adbd=restarting
+init.svc.logd=running
+init.svc.ueventd=running
+init.svc.recovery=running
+init.svc.servicemanager=running
+init.svc.hwservicemanager=running
+init.svc.vndservicemanager=running
+twrp.crash_counter=0
+twrp.action_complete=0
+ro.config.ringtone=Ring_Synth_04.ogg
+ro.config.alarm_alert=Alarm_Classic.ogg
+ro.config.notification_sound=pixiedust.ogg
+ro.boot.mode=recovery
+ro.boot.dtb_idx=0
+ro.boot.selinux=permissive
+ro.boot.dtbo_idx=0
+ro.boot.hardware=mt6762
+ro.boot.boot_devices=bootdevice,11230000.mmc
+ro.boot.meta_log_disable=0
+ro.boot.verifiedbootstate=orange
+ro.build.id=RQ1A.210205.004
+ro.build.date=Sun Jul 17 16:39:06 UTC 2022
+ro.build.date.utc=1658075946
+ro.build.host=fv-az129-73
+ro.build.tags=test-keys
+ro.build.type=eng
+ro.build.user=runner
+ro.build.display.id=twrp_Armor_X5_Q-eng 16.1.0 RQ1A.210205.004 eng.runner.20220717.164323 test-keys
+ro.build.product=Armor_X5_Q
+ro.build.version.sdk=30
+ro.build.version.base_os=
+ro.build.version.release=11
+ro.build.version.codename=REL
+ro.build.version.incremental=eng.runner.20220717.164323
+ro.build.version.preview_sdk=0
+ro.build.version.security_patch=2099-12-31
+ro.build.version.release_or_codename=16.1.0
+ro.build.description=twrp_Armor_X5_Q-eng 16.1.0 RQ1A.210205.004 eng.runner.20220717.164323 test-keys
+ro.build.system_root_image=true
+ro.product.cpu.abi=arm64-v8a
+ro.product.cpu.abilist=armeabi-v7a,armeabi
+ro.product.name=twrp_Armor_X5_Q
+ro.product.brand=Ulefone
+ro.product.model=Armor X5
+ro.product.device=Armor_X5_Q
+ro.product.manufacturer=ulefone
+ro.baseband=unknown
+ro.bootmode=recovery
+ro.hardware=mt6762
+ro.revision=0
+ro.bootloader=unknown
+ro.debuggable=1
+ro.property_service.version=2
+sys.usb.controller=musb-hdrc
+persist.sys.dalvik.vm.lib.2=libart.so
+ro.sf.lcd_density=440
+ro.com.android.dataroaming=true
+ro.zygote=zygote32
+keyguard.no_require_sim=true
+tombstoned.max_tombstone_count=50
+ro.dalvik.vm.native.bridge=0
+dalvik.vm.isa.arm.variant=generic
+dalvik.vm.isa.arm.features=default
+dalvik.vm.isa.arm64.variant=generic
+dalvik.vm.isa.arm64.features=default
+dalvik.vm.dexopt.secondary=true
+dalvik.vm.usejit=true
+dalvik.vm.lockprof.threshold=500
+dalvik.vm.dex2oat-Xms=64m
+dalvik.vm.dex2oat-Xmx=512m
+dalvik.vm.appimageformat=lz4
+dalvik.vm.usejitprofiles=true
+dalvik.vm.image-dex2oat-Xms=64m
+dalvik.vm.image-dex2oat-Xmx=64m
+dalvik.vm.image-dex2oat-filter=extract
+ro.odm.build.date=Sun Jul 17 16:39:06 UTC 2022
+ro.odm.build.date.utc=1658075946
+ro.odm.build.version.incremental=eng.runner.20220717.164323
+ro.odm.build.fingerprint=Ulefone/twrp_Armor_X5_Q/Armor_X5_Q:16.1.0/RQ1A.210205.004/runner07171639:eng/test-keys
+ro.hwui.use_vulkan=
+ro.board.platform=mt6765
+ro.vendor.build.date=Sun Jul 17 16:39:06 UTC 2022
+ro.vendor.build.date.utc=1658075946
+ro.vendor.build.version.sdk=30
+ro.vendor.build.version.incremental=eng.runner.20220717.164323
+ro.vendor.build.fingerprint=Ulefone/twrp_Armor_X5_Q/Armor_X5_Q:16.1.0/RQ1A.210205.004/runner07171639:eng/test-keys
+ro.carrier=unknown
+ro.product.cpu.abilist32=armeabi-v7a,armeabi
+ro.product.cpu.abilist64=
+ro.product.odm.name=twrp_Armor_X5_Q
+ro.product.odm.brand=Ulefone
+ro.product.odm.model=Armor X5
+ro.product.odm.device=Armor_X5_Q
+ro.product.odm.manufacturer=ulefone
+ro.product.board=mt6763
+ro.product.vendor.name=twrp_Armor_X5_Q
+ro.product.vendor.brand=Ulefone
+ro.product.vendor.model=Armor X5
+ro.product.vendor.device=Armor_X5_Q
+ro.product.vendor.manufacturer=ulefone
+ro.bootimage.build.date=Sun Jul 17 16:39:06 UTC 2022
+ro.bootimage.build.date.utc=1658075946
+ro.bootimage.build.fingerprint=Ulefone/twrp_Armor_X5_Q/Armor_X5_Q:16.1.0/RQ1A.210205.004/runner07171639:eng/test-keys
+ro.build.fingerprint=Ulefone/twrp_Armor_X5_Q/Armor_X5_Q:11/RQ1A.210205.004/eng.runner.20220717.164323:eng/test-keys
+pm.dexopt.boot=extract
+pm.dexopt.ab-ota=speed-profile
+pm.dexopt.shared=speed
+pm.dexopt.install=speed-profile
+pm.dexopt.inactive=verify
+pm.dexopt.bg-dexopt=speed-profile
+pm.dexopt.first-boot=extract
+ro.adb.secure=0
+ro.secure=0
+sys.usb.config=adb
+sys.usb.configfs=1
+sys.usb.ffs.aio_compat=1
+ro.gsid.image_running=0
+gsid.image_installed=0
+hwservicemanager.ready=true
+init.svc_debug_pid.adbd=330
+init.svc_debug_pid.logd=320
+init.svc_debug_pid.ueventd=309
+init.svc_debug_pid.recovery=329
+init.svc_debug_pid.servicemanager=322
+init.svc_debug_pid.hwservicemanager=321
+init.svc_debug_pid.vndservicemanager=323
+log.tag.stats_log=I
+ro.logd.size.stats=64K
+persist.debug.dalvik.vm.core_platform_api_policy=just-warn
+ro.boot.serialno=3082sh1001022031
+ro.serialno=3082sh1001022031
+service.adb.root=1
+net.bt.name=Android
+persist.sys.usb.config=adb
+persist.sys.disable_rescue=true
+persist.sys.isUsbOtgEnabled=true
+persist.traced.enable=1
+ro.odm.build.id=RQ1A.210205.004
+ro.odm.build.tags=test-keys
+ro.odm.build.type=eng
+ro.odm.build.version.sdk=30
+ro.odm.build.version.release=11
+ro.odm.build.version.release_or_codename=16.1.0
+ro.odm.product.cpu.abilist=armeabi-v7a,armeabi
+ro.odm.product.cpu.abilist32=armeabi-v7a,armeabi
+ro.odm.product.cpu.abilist64=
+ro.vendor.build.id=RQ1A.210205.004
+ro.vendor.build.tags=test-keys
+ro.vendor.build.type=eng
+ro.vendor.build.version.release=11
+ro.vendor.build.version.release_or_codename=16.1.0
+ro.vendor.product.cpu.abilist=armeabi-v7a,armeabi
+ro.vendor.product.cpu.abilist32=armeabi-v7a,armeabi
+ro.vendor.product.cpu.abilist64=
+ro.vendor.build.security_patch=2099-12-31
+ro.vndk.lite=true
+ro.vndk.version=30
+
+=> Linking mtab
+=> Processing /etc/recovery.fstab
+I:Reading /etc/recovery.fstab
+I:Processing '/system'
+I:Created '/system_root' folder.
+I:Processing '/system_image'
+I:Processing '/vendor'
+I:Processing '/vendor_image'
+I:Processing '/metadata'
+I:Unhandled fstab information '#flags=display=metadata' in fstab line '/metadata                 ext4     /dev/block/platform/bootdevice/by-name/md_udc            #flags=display=metadata
+'
+I:Created '/metadata' folder.
+I:Processing '/data'
+I:Unhandled fstab information '#flags=display=data' in fstab line '/data                     ext4     /dev/block/platform/bootdevice/by-name/userdata          flags=encryptable=/dev/block/platform/bootdevice/by-name/metadata #flags=display=data
+'
+I:Processing '/cache'
+I:Processing '/protect_f'
+I:Created '/protect_f' folder.
+I:Processing '/protect_s'
+I:Created '/protect_s' folder.
+I:Processing '/nvdata'
+I:Created '/nvdata' folder.
+I:Processing '/nvcfg'
+I:Created '/nvcfg' folder.
+I:Processing '/persistent'
+I:Processing '/nvram'
+I:Processing '/proinfo'
+I:Processing '/lk'
+I:Processing '/lk2'
+I:Processing '/para'
+I:Processing '/boot'
+I:Processing '/recovery'
+I:Processing '/logo'
+I:Processing '/expdb'
+I:Processing '/seccfg'
+I:Processing '/tee1'
+I:Processing '/tee2'
+I:Unhandled fstab information '#flags=display=tee2' in fstab line '/tee2                     emmc     /dev/block/platform/bootdevice/by-name/tee2              flags=backup=1;subpartitionof=/tee1 #flags=display=tee2
+'
+I:Processing '/scp1'
+I:Processing '/scp2'
+I:Unhandled fstab information '#flags=display=scp2' in fstab line '/scp2                     emmc     /dev/block/platform/bootdevice/by-name/scp2              flags=backup=1;subpartitionof=/scp1 #flags=display=scp2
+'
+I:Processing '/sspm_1'
+I:Processing '/sspm_2'
+I:Processing '/md1img'
+I:Processing '/md1dsp'
+I:Processing '/md1arm7'
+I:Processing '/md3img'
+I:Processing '/spmfw'
+I:Processing '/boot_para'
+I:Processing '/odmdtbo'
+I:Processing '/dtbo'
+I:Processing '/vbmeta'
+I:Processing '/external_sd'
+I:Created '/external_sd' folder.
+I:Processing '/usbotg'
+I:Created '/usbotg' folder.
+I:Done processing fstab files
+I:File Based Encryption is present
+fscrypt_initialize_systemwide_keys returned fail
+fscrypt_initialize_systemwide_keys returned fail
+fscrypt_initialize_systemwide_keys returned fail
+I:Setting up '/data' as data/media emulated storage.
+I:Setting up '/data' as data/media emulated storage.
+I:Not recreating media folder on FBE
+I:Backup folder set to '/data/media/0/TWRP/BACKUPS/Armor_X5'
+I:Settings storage is '/data/media/0'
+Failed to mount '/system_root' (Invalid argument)
+I:Actual block device: '', current file system: 'ext4'
+I:Decrypt adopted storage starting
+I:PageManager::LoadFileToBuffer loading filename: '/data/system/storage.xml' directly
+I:No /data/system/storage.xml for adopted storage
+Updating partition details...
+I:checking for twrp app
+I:Unable to mount '/system_root'
+I:Actual block device: '', current file system: 'ext4'
+I:Data backup size is 578MB, free: 22830MB.
+...done
+/super | /dev/block/by-name/super | Size: 0MB
+   Flags: Can_Be_Backed_Up IsPresent Can_Flash_Img 
+   Alternate_Block_Device: /dev/block/by-name/super
+   Display_Name: super
+   Backup_Path: /super
+   Backup_Name: super
+   Backup_Display_Name: Super ()
+   Current_File_System: emmc
+   Backup_Method: dd
+
+I:Unmounting main partitions...
+SELinux contexts loaded from /file_contexts
+Full SELinux support is present.
+I:Switching packages (TWRP)
+
+
+Partition Logs:
+/system_root |  | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
+   Flags: Can_Be_Mounted Can_Be_Backed_Up Is_Storage Mount_Read_Only 
+   Primary_Block_Device: /dev/block/platform/bootdevice/by-name/system
+   Display_Name: System
+   Storage_Name: System
+   Backup_Path: /system_root
+   Backup_Name: system
+   Backup_Display_Name: System
+   Storage_Path: /system_root
+   Current_File_System: ext4
+   Fstab_File_System: ext4
+   Backup_Method: files
+   MTP_Storage_ID: 65537
+
+/system_image |  | Size: 0MB
+   Flags: Can_Be_Backed_Up Can_Flash_Img 
+   Primary_Block_Device: /dev/block/platform/bootdevice/by-name/system
+   Display_Name: system_image
+   Storage_Name: system_image
+   Backup_Path: /system_image
+   Backup_Name: system_image
+   Backup_Display_Name: system_image
+   Storage_Path: /system_image
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
+
+/vendor |  | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
+   Flags: Can_Be_Mounted Can_Be_Wiped Can_Be_Backed_Up Wipe_Available_in_GUI Is_Storage Mount_Read_Only 
+   Primary_Block_Device: /dev/block/platform/bootdevice/by-name/vendor
+   Display_Name: Vendor
+   Storage_Name: Vendor
+   Backup_Path: /vendor
+   Backup_Name: vendor
+   Backup_Display_Name: Vendor
+   Storage_Path: /vendor
+   Current_File_System: ext4
+   Fstab_File_System: ext4
+   Backup_Method: files
+   MTP_Storage_ID: 65538
+
+/vendor_image |  | Size: 0MB
+   Flags: Can_Be_Backed_Up Can_Flash_Img 
+   Primary_Block_Device: /dev/block/platform/bootdevice/by-name/vendor
+   Display_Name: vendor_image
+   Storage_Name: vendor_image
+   Backup_Path: /vendor_image
+   Backup_Name: vendor_image
+   Backup_Display_Name: vendor_image
+   Storage_Path: /vendor_image
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
+
+/metadata | /dev/block/mmcblk0p11 | Size: 17MB Used: 0MB Free: 17MB Backup Size: 0MB
+   Flags: Can_Be_Mounted Can_Be_Wiped IsPresent 
+   Primary_Block_Device: /dev/block/mmcblk0p11
+   Display_Name: metadata
+   Storage_Name: metadata
+   Backup_Path: /metadata
+   Backup_Name: metadata
+   Backup_Display_Name: metadata
+   Storage_Path: /metadata
+   Current_File_System: ext4
+   Fstab_File_System: ext4
+   Backup_Method: files
+
+/data | /dev/block/mmcblk0p37 | Size: 24141MB Used: 578MB Free: 22830MB Backup Size: 578MB
+   Flags: Can_Be_Mounted Can_Be_Wiped Can_Be_Backed_Up Wipe_During_Factory_Reset Wipe_Available_in_GUI IsPresent Can_Be_Encrypted Is_Encrypted Is_Decrypted Has_Data_Media Can_Encrypt_Backup Use_Userdata_Encryption Is_Storage Is_Settings_Storage 
+   Symlink_Path: /data/media/0
+   Symlink_Mount_Point: /sdcard
+   Primary_Block_Device: /dev/block/mmcblk0p37
+   Crypto_Key_Location: /dev/block/platform/bootdevice/by-name/metadata
+   Display_Name: Data
+   Storage_Name: Internal Storage
+   Backup_Path: /data
+   Backup_Name: data
+   Backup_Display_Name: Data
+   Storage_Path: /data/media/0
+   Current_File_System: ext4
+   Fstab_File_System: ext4
+   Backup_Method: files
+   MTP_Storage_ID: 65539
+
+/cache | /dev/block/mmcblk0p36 | Size: 402MB Used: 0MB Free: 401MB Backup Size: 0MB
+   Flags: Can_Be_Mounted Can_Be_Wiped Can_Be_Backed_Up Wipe_During_Factory_Reset Wipe_Available_in_GUI IsPresent 
+   Primary_Block_Device: /dev/block/mmcblk0p36
+   Display_Name: cache
+   Storage_Name: cache
+   Backup_Path: /cache
+   Backup_Name: cache
+   Backup_Display_Name: cache
+   Storage_Path: /cache
+   Current_File_System: ext4
+   Fstab_File_System: ext4
+   Backup_Method: files
+
+/protect_f | /dev/block/mmcblk0p13 | Size: 3MB Used: 0MB Free: 3MB Backup Size: 0MB
+   Flags: Can_Be_Mounted Can_Be_Wiped Can_Be_Backed_Up Has_SubPartition IsPresent 
+   Primary_Block_Device: /dev/block/mmcblk0p13
+   Display_Name: Protect
+   Storage_Name: Protect
+   Backup_Path: /protect_f
+   Backup_Name: protect_f
+   Backup_Display_Name: Protect
+   Storage_Path: /protect_f
+   Current_File_System: ext4
+   Fstab_File_System: ext4
+   Backup_Method: files
+
+/protect_s | /dev/block/mmcblk0p14 | Size: 11MB Used: 0MB Free: 11MB Backup Size: 0MB
+   Flags: Can_Be_Mounted Can_Be_Wiped Can_Be_Backed_Up Is_SubPartition IsPresent 
+   SubPartition_Of: /protect_f
+   Primary_Block_Device: /dev/block/mmcblk0p14
+   Display_Name: protect_s
+   Storage_Name: protect_s
+   Backup_Path: /protect_s
+   Backup_Name: protect_s
+   Backup_Display_Name: protect_s
+   Storage_Path: /protect_s
+   Current_File_System: ext4
+   Fstab_File_System: ext4
+   Backup_Method: files
+
+/nvdata | /dev/block/mmcblk0p10 | Size: 57MB Used: 1MB Free: 56MB Backup Size: 1MB
+   Flags: Can_Be_Mounted Can_Be_Wiped Can_Be_Backed_Up IsPresent 
+   Primary_Block_Device: /dev/block/mmcblk0p10
+   Display_Name: nvdata
+   Storage_Name: nvdata
+   Backup_Path: /nvdata
+   Backup_Name: nvdata
+   Backup_Display_Name: nvdata
+   Storage_Path: /nvdata
+   Current_File_System: ext4
+   Fstab_File_System: ext4
+   Backup_Method: files
+
+/nvcfg | /dev/block/mmcblk0p9 | Size: 26MB Used: 0MB Free: 26MB Backup Size: 0MB
+   Flags: Can_Be_Mounted Can_Be_Wiped Can_Be_Backed_Up IsPresent 
+   Primary_Block_Device: /dev/block/mmcblk0p9
+   Display_Name: nvcfg
+   Storage_Name: nvcfg
+   Backup_Path: /nvcfg
+   Backup_Name: nvcfg
+   Backup_Display_Name: nvcfg
+   Storage_Path: /nvcfg
+   Current_File_System: ext4
+   Fstab_File_System: ext4
+   Backup_Method: files
+
+/persistent | /dev/block/mmcblk0p8 | Size: 1MB
+   Flags: Can_Be_Backed_Up IsPresent 
+   Primary_Block_Device: /dev/block/mmcblk0p8
+   Display_Name: persistent
+   Storage_Name: persistent
+   Backup_Path: /persistent
+   Backup_Name: persistent
+   Backup_Display_Name: persistent
+   Storage_Path: /persistent
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
+
+/nvram | /dev/block/mmcblk0p26 | Size: 64MB
+   Flags: Can_Be_Backed_Up IsPresent Can_Flash_Img 
+   Primary_Block_Device: /dev/block/mmcblk0p26
+   Display_Name: nvram
+   Storage_Name: nvram
+   Backup_Path: /nvram
+   Backup_Name: nvram
+   Backup_Display_Name: nvram
+   Storage_Path: /nvram
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
+
+/proinfo | /dev/block/mmcblk0p1 | Size: 3MB
+   Flags: Can_Be_Backed_Up IsPresent 
+   Primary_Block_Device: /dev/block/mmcblk0p1
+   Display_Name: proinfo
+   Storage_Name: proinfo
+   Backup_Path: /proinfo
+   Backup_Name: proinfo
+   Backup_Display_Name: proinfo
+   Storage_Path: /proinfo
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
+
+/lk | /dev/block/mmcblk0p27 | Size: 1MB
+   Flags: Can_Be_Backed_Up Has_SubPartition IsPresent Can_Flash_Img 
+   Primary_Block_Device: /dev/block/mmcblk0p27
+   Display_Name: Uboot
+   Storage_Name: Uboot
+   Backup_Path: /lk
+   Backup_Name: lk
+   Backup_Display_Name: Uboot
+   Storage_Path: /lk
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
+
+/lk2 | /dev/block/mmcblk0p28 | Size: 1MB
+   Flags: Can_Be_Backed_Up Is_SubPartition IsPresent 
+   SubPartition_Of: /lk
+   Primary_Block_Device: /dev/block/mmcblk0p28
+   Display_Name: lk2
+   Storage_Name: lk2
+   Backup_Path: /lk2
+   Backup_Name: lk2
+   Backup_Display_Name: lk2
+   Storage_Path: /lk2
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
+
+/para | /dev/block/mmcblk0p4 | Size: 0MB
+   Flags: Can_Be_Backed_Up IsPresent 
+   Primary_Block_Device: /dev/block/mmcblk0p4
+   Display_Name: Parametr
+   Storage_Name: Parametr
+   Backup_Path: /para
+   Backup_Name: para
+   Backup_Display_Name: Parametr
+   Storage_Path: /para
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
+
+/boot | /dev/block/mmcblk0p29 | Size: 32MB
+   Flags: Can_Be_Backed_Up IsPresent Can_Flash_Img 
+   Primary_Block_Device: /dev/block/mmcblk0p29
+   Display_Name: boot
+   Storage_Name: boot
+   Backup_Path: /boot
+   Backup_Name: boot
+   Backup_Display_Name: boot
+   Storage_Path: /boot
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
+
+/recovery | /dev/block/mmcblk0p3 | Size: 32MB
+   Flags: Can_Be_Backed_Up IsPresent Can_Flash_Img 
+   Primary_Block_Device: /dev/block/mmcblk0p3
+   Display_Name: recovery
+   Storage_Name: recovery
+   Backup_Path: /recovery
+   Backup_Name: recovery
+   Backup_Display_Name: recovery
+   Storage_Path: /recovery
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
+
+/logo | /dev/block/mmcblk0p30 | Size: 8MB
+   Flags: Can_Be_Backed_Up IsPresent Can_Flash_Img 
+   Primary_Block_Device: /dev/block/mmcblk0p30
+   Display_Name: logo
+   Storage_Name: logo
+   Backup_Path: /logo
+   Backup_Name: logo
+   Backup_Display_Name: logo
+   Storage_Path: /logo
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
+
+/expdb | /dev/block/mmcblk0p5 | Size: 20MB
+   Flags: Can_Be_Backed_Up IsPresent 
+   Primary_Block_Device: /dev/block/mmcblk0p5
+   Display_Name: expdb
+   Storage_Name: expdb
+   Backup_Path: /expdb
+   Backup_Name: expdb
+   Backup_Display_Name: expdb
+   Storage_Path: /expdb
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
+
+/seccfg | /dev/block/mmcblk0p15 | Size: 8MB
+   Flags: Can_Be_Backed_Up IsPresent 
+   Primary_Block_Device: /dev/block/mmcblk0p15
+   Display_Name: seccfg
+   Storage_Name: seccfg
+   Backup_Path: /seccfg
+   Backup_Name: seccfg
+   Backup_Display_Name: seccfg
+   Storage_Path: /seccfg
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
+
+/tee1 | /dev/block/mmcblk0p32 | Size: 5MB
+   Flags: Can_Be_Backed_Up Has_SubPartition IsPresent Can_Flash_Img 
+   Primary_Block_Device: /dev/block/mmcblk0p32
+   Display_Name: tee1
+   Storage_Name: tee1
+   Backup_Path: /tee1
+   Backup_Name: tee1
+   Backup_Display_Name: tee1
+   Storage_Path: /tee1
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
+
+/tee2 | /dev/block/mmcblk0p33 | Size: 6MB
+   Flags: Can_Be_Backed_Up Is_SubPartition IsPresent 
+   SubPartition_Of: /tee1
+   Primary_Block_Device: /dev/block/mmcblk0p33
+   Display_Name: tee2
+   Storage_Name: tee2
+   Backup_Path: /tee2
+   Backup_Name: tee2
+   Backup_Display_Name: tee2
+   Storage_Path: /tee2
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
+
+/scp1 | /dev/block/mmcblk0p20 | Size: 1MB
+   Flags: Can_Be_Backed_Up Has_SubPartition IsPresent 
+   Primary_Block_Device: /dev/block/mmcblk0p20
+   Display_Name: scp1
+   Storage_Name: scp1
+   Backup_Path: /scp1
+   Backup_Name: scp1
+   Backup_Display_Name: scp1
+   Storage_Path: /scp1
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
+
+/scp2 | /dev/block/mmcblk0p21 | Size: 1MB
+   Flags: Can_Be_Backed_Up Is_SubPartition IsPresent 
+   SubPartition_Of: /scp1
+   Primary_Block_Device: /dev/block/mmcblk0p21
+   Display_Name: scp2
+   Storage_Name: scp2
+   Backup_Path: /scp2
+   Backup_Name: scp2
+   Backup_Display_Name: scp2
+   Storage_Path: /scp2
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
+
+/sspm_1 | /dev/block/mmcblk0p22 | Size: 1MB
+   Flags: Can_Be_Backed_Up Is_SubPartition IsPresent 
+   SubPartition_Of: /spmfw
+   Primary_Block_Device: /dev/block/mmcblk0p22
+   Display_Name: sspm_1
+   Storage_Name: sspm_1
+   Backup_Path: /sspm_1
+   Backup_Name: sspm_1
+   Backup_Display_Name: sspm_1
+   Storage_Path: /sspm_1
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
+
+/sspm_2 | /dev/block/mmcblk0p23 | Size: 1MB
+   Flags: Can_Be_Backed_Up Is_SubPartition IsPresent 
+   SubPartition_Of: /spmfw
+   Primary_Block_Device: /dev/block/mmcblk0p23
+   Display_Name: sspm_2
+   Storage_Name: sspm_2
+   Backup_Path: /sspm_2
+   Backup_Name: sspm_2
+   Backup_Display_Name: sspm_2
+   Storage_Path: /sspm_2
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
+
+/md1img | /dev/block/mmcblk0p18 | Size: 100MB
+   Flags: Can_Be_Backed_Up Has_SubPartition IsPresent 
+   Primary_Block_Device: /dev/block/mmcblk0p18
+   Display_Name: modem
+   Storage_Name: modem
+   Backup_Path: /md1img
+   Backup_Name: md1img
+   Backup_Display_Name: modem
+   Storage_Path: /md1img
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
+
+/md1dsp |  | Size: 0MB
+   Flags: Can_Be_Backed_Up Is_SubPartition 
+   SubPartition_Of: /md1img
+   Primary_Block_Device: /dev/block/platform/bootdevice/by-name/md1dsp
+   Display_Name: md1dsp
+   Storage_Name: md1dsp
+   Backup_Path: /md1dsp
+   Backup_Name: md1dsp
+   Backup_Display_Name: md1dsp
+   Storage_Path: /md1dsp
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
+
+/md1arm7 |  | Size: 0MB
+   Flags: Can_Be_Backed_Up 
+   Primary_Block_Device: /dev/block/platform/bootdevice/by-name/md1arm7
+   Display_Name: md1arm7
+   Storage_Name: md1arm7
+   Backup_Path: /md1arm7
+   Backup_Name: md1arm7
+   Backup_Display_Name: md1arm7
+   Storage_Path: /md1arm7
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
+
+/md3img |  | Size: 0MB
+   Flags: Can_Be_Backed_Up 
+   Primary_Block_Device: /dev/block/platform/bootdevice/by-name/md3img
+   Display_Name: md3img
+   Storage_Name: md3img
+   Backup_Path: /md3img
+   Backup_Name: md3img
+   Backup_Display_Name: md3img
+   Storage_Path: /md3img
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
+
+/spmfw | /dev/block/mmcblk0p19 | Size: 1MB
+   Flags: Can_Be_Backed_Up Has_SubPartition IsPresent 
+   Primary_Block_Device: /dev/block/mmcblk0p19
+   Display_Name: spmfw
+   Storage_Name: spmfw
+   Backup_Path: /spmfw
+   Backup_Name: spmfw
+   Backup_Display_Name: spmfw
+   Storage_Path: /spmfw
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
+
+/boot_para | /dev/block/mmcblk0p2 | Size: 1MB
+   Flags: Can_Be_Backed_Up IsPresent 
+   Primary_Block_Device: /dev/block/mmcblk0p2
+   Display_Name: boot_para
+   Storage_Name: boot_para
+   Backup_Path: /boot_para
+   Backup_Name: boot_para
+   Backup_Display_Name: boot_para
+   Storage_Path: /boot_para
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
+
+/odmdtbo |  | Size: 0MB
+   Flags: Can_Be_Backed_Up 
+   Primary_Block_Device: /dev/block/platform/bootdevice/by-name/odmdtbo
+   Display_Name: odmdtbo
+   Storage_Name: odmdtbo
+   Backup_Path: /odmdtbo
+   Backup_Name: odmdtbo
+   Backup_Display_Name: odmdtbo
+   Storage_Path: /odmdtbo
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
+
+/dtbo | /dev/block/mmcblk0p31 | Size: 8MB
+   Flags: Can_Be_Backed_Up IsPresent 
+   Primary_Block_Device: /dev/block/mmcblk0p31
+   Display_Name: dtbo
+   Storage_Name: dtbo
+   Backup_Path: /dtbo
+   Backup_Name: dtbo
+   Backup_Display_Name: dtbo
+   Storage_Path: /dtbo
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
+
+/vbmeta | /dev/block/mmcblk0p35 | Size: 8MB
+   Flags: Can_Be_Backed_Up IsPresent 
+   Primary_Block_Device: /dev/block/mmcblk0p35
+   Display_Name: vbmeta
+   Storage_Name: vbmeta
+   Backup_Path: /vbmeta
+   Backup_Name: vbmeta
+   Backup_Display_Name: vbmeta
+   Storage_Path: /vbmeta
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
+
+/external_sd | /dev/block/mmcblk1p1 | Size: 15188MB Used: 6227MB Free: 8961MB Backup Size: 6227MB
+   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Removable IsPresent Is_Storage 
+   Primary_Block_Device: /dev/block/mmcblk1p1
+   Alternate_Block_Device: /dev/block/mmcblk1
+   Display_Name: External SDcard
+   Storage_Name: External SDcard
+   Backup_Path: /external_sd
+   Backup_Name: external_sd
+   Backup_Display_Name: External SDcard
+   Storage_Path: /external_sd
+   Current_File_System: vfat
+   Fstab_File_System: auto
+   Backup_Method: files
+   MTP_Storage_ID: 65540
+
+/usbotg |  | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
+   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Removable Is_Storage 
+   Primary_Block_Device: /dev/block/sda1
+   Alternate_Block_Device: /dev/block/sda
+   Display_Name: USB-OTG
+   Storage_Name: USB-OTG
+   Backup_Path: /usbotg
+   Backup_Name: usbotg
+   Backup_Display_Name: USB-OTG
+   Storage_Path: /usbotg
+   Current_File_System: auto
+   Fstab_File_System: auto
+   Backup_Method: files
+   MTP_Storage_ID: 65541
+
+/super | /dev/block/by-name/super | Size: 0MB
+   Flags: Can_Be_Backed_Up IsPresent Can_Flash_Img 
+   Alternate_Block_Device: /dev/block/by-name/super
+   Display_Name: super
+   Backup_Path: /super
+   Backup_Name: super
+   Backup_Display_Name: Super ()
+   Current_File_System: emmc
+   Backup_Method: dd
+
+I:Attempt to load settings from settings file...
+I:InfoManager file '/data/media/0/TWRP/.twrps' not found.
+I:Backup folder set to '/data/media/0/TWRP/BACKUPS/Armor_X5'
+I:Version number saved to '/cache/recovery/.version'
+I:Unable to mount '/system_root'
+I:Actual block device: '', current file system: 'ext4'
+I:Unable to mount '/vendor'
+I:Actual block device: '', current file system: 'ext4'
+I:Unable to mount '/usbotg'
+I:Actual block device: '', current file system: 'auto'
+I:TWFunc::Set_Brightness: Setting brightness control to 255
+I:Starting MTP
+I:Cannot find file /sys/class/android_usb/android0/idVendor
+I:Cannot find file /sys/class/android_usb/android0/idProduct
+I:[MTP] Starting MTP
+I:sending message to add 65539 '/data/media/0' 'Internal Storage'
+I:Message sent, add storage ID: 65539 '/data/media/0'
+I:sending message to add 65540 '/external_sd' 'External SDcard'
+I:Message sent, add storage ID: 65540 '/external_sd'
+MTP Enabled
+I:Switching packages (TWRP)
+I:Set page: 'system_readonly'
+I:[MTP] Using '/dev/mtp_usb' for MTP device.
+E:[MTP] could not open MTP driver, errno: 2
+I:Set overlay: 'select_language'
+I:Set overlay: ''
+I:operation_start: 'Set Language'
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/ru.xml' directly
+parsing languageFile
+parsing languageFile done
+I:Translating partition display names
+I:Backup folder set to '/data/media/0/TWRP/BACKUPS/Armor_X5'
+I:operation_end - status=0
+I:Loading package: TWRP (/data/media/0/TWRP/theme/ui.zip)
+I:Loading zip theme
+I:Failed to load package '/data/media/0/TWRP/theme/ui.zip'.
+I:Attempting to reload stock theme...
+I:Loading package: TWRP (/twres/ui.xml)
+I:Load XML directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/zh_TW.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/zh_CN.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/uk.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/tr.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/sv.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/sl.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/sk.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/ru.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/pt_PT.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/pt_BR.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/pl.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/nl.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/ja.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/it.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/id.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/hu.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/fr.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/es.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/en.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/el.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/de.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/cz.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/en.xml' directly
+parsing languageFile
+parsing languageFile done
+I:PageManager::LoadFileToBuffer loading filename: '/twres/ui.xml' directly
+I:Checking resolution...
+I:Scaling theme width 0.666667x and height 0.750000x, offsets x: 0 y: 0 w: 0 h: 0
+I:Loading resources...
+I:Failed to load image from indeterminate013, error -1
+I:Loading variables...
+I:Loading mouse cursor...
+I:Loading pages...
+I:Including file: /twres/portrait.xml...
+I:PageManager::LoadFileToBuffer loading filename: '/twres/portrait.xml' directly
+I:Loading resources...
+I:Loading variables...
+I:Loading mouse cursor...
+I:Loading pages...
+I:Loading page main
+I:Loading page main2
+I:Loading page install
+I:Loading page flash_confirm
+I:Loading page flash_zip
+I:Loading page flash_done
+I:Loading page flash_sleep_and_reboot
+I:Loading page flashimage_confirm
+I:Loading page clear_vars
+I:Loading page reboot_system_routine
+I:Loading page confirm_action
+I:Loading page action_page
+I:Loading page singleaction_page
+I:Loading page action_complete
+I:Loading page filecheck
+I:Loading page rebootcheck
+I:Loading page wipe
+I:Loading page advancedwipe
+I:Loading page formatdata
+I:Loading page formatdata_confirm
+I:Loading page checkpartitionlist
+I:Loading page partitionoptions
+I:Loading page refreshfilesystem
+I:Loading page selectfilesystem
+I:Loading page backup
+I:Loading page multiuser_warning
+I:Loading page backup_options
+I:Loading page backupname1
+I:Loading page backupname2
+I:Loading page backupencryption
+I:Loading page backupencryption2
+I:Loading page checkbackuppassword
+I:Loading page backup_run
+I:Loading page restore
+I:Unable to open '/data/media/0/TWRP/BACKUPS/Armor_X5'
+I:Loading page restore_force
+I:Unable to open '/data/media/0/TWRP/BACKUPS'
+I:Loading page restore_read
+I:Loading page restore_decrypt
+I:Loading page try_restore_decrypt
+I:Loading page restore_select
+I:Loading page renamebackup
+I:Loading page restore_run
+I:Loading page mount
+I:Loading page usb_mount
+I:Loading page usb_umount
+I:Loading page system_readonly_check
+I:Loading page fastbootreboot
+I:Loading page reboot
+I:Loading page installapp
+I:Loading page system_readonly
+I:Loading page settings
+I:Loading page settings_timezone
+I:Loading page settings_screen
+I:Loading page settings_vibration
+I:Loading page settings_language
+I:Loading page copylog
+I:Loading page advanced
+I:Loading page partsdcardsel
+I:Loading page partsdcardcheck
+I:Loading page partsdcard
+I:Loading page htcdumlock
+I:Loading page repackselect
+I:Loading page repackconfirm
+I:Loading page lock
+I:Loading page filemanagerlist
+I:Loading page filemanageroptions
+I:Loading page choosedestinationfolder
+I:Loading page filemanagerrenamefile
+I:Loading page filemanagerrenamefolder
+I:Loading page filemanagerchmod
+I:Loading page filemanagerconfirm
+I:Loading page filemanageraction
+I:Loading page decrypt
+I:Loading page decrypt_pattern
+I:Loading page decrypt_pin
+I:Loading page trydecrypt
+I:Loading page canceldecrypt
+I:Loading page terminalcommand
+I:Loading page fastboot
+I:Loading page sideload
+I:Loading page fixcontexts
+I:Loading page slideout
+I:Loading page select_storage
+I:Loading page select_language
+I:Loading page decrypt_users
+I:Loading page changeTwrpFolder
+I:Loading page restore_keymaster
+I:Switching packages (TWRP)
+I:Loading language 'ru'
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/ru.xml' directly
+parsing languageFile
+parsing languageFile done
+I:Translating partition display names
+I:Backup folder set to '/data/media/0/TWRP/BACKUPS/Armor_X5'
+I:operation_start: 'Toggle System Mount'
+I:operation_end - status=0
+I:Set page: 'main'
+I:Set page: 'clear_vars'
+I:Set page: 'main2'
+I:Set page: 'main'
+I:Set page: 'clear_vars'
+I:Set page: 'main2'
+I:Path /cache/recovery/log.gz does not exist. Unable to copy file to /cache/recovery/last_log.gz
+I:Starting Adb Backup FIFO
+I:Unable to mount '/system_root'
+I:Actual block device: '', current file system: 'ext4'
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/ru.xml' directly
+parsing languageFile
+parsing languageFile done
+I:Translating partition display names
+I:Backup folder set to '/data/media/0/TWRP/BACKUPS/Armor_X5'
+Не удаётся смонтировать '/system_root' (Invalid argument)
+I:Actual block device: '', current file system: 'ext4'
+I:Unable to read sdk version from build prop
+I:Switching packages (TWRP)
+I:Set page: 'main'
+I:Set page: 'clear_vars'
+I:Set page: 'main2'
+I:Set page: 'advanced'
+I:Set page: 'copylog'
+I:Set page: 'action_page'
+I:operation_start: 'Copy Log'
+E:Unable to chmod file: /data/media/0/recovery.log. Error: No such file or directory
+I:Cannot find file /data/media/0/dmesg.log
+Kernel Log скопирован в /data/media/0/dmesg.log
+I:Cannot find file /data/media/0/logcat.txt
+Logcat скопирован в /data/media/0/logcat.txt
+recovery.log скопирован в /data/media/0/recovery.log.
+I:Set page: 'action_complete'
+I:operation_end - status=0
+I:Set page: 'clear_vars'
+I:Set page: 'advanced'
+I:Set page: 'changeTwrpFolder'
+I:Set page: 'advanced'
+I:Set page: 'partsdcardsel'
+I:Set page: 'advanced'
+I:Set page: 'copylog'
+I:Set page: 'action_page'
+I:operation_start: 'Copy Log'
+E:Unable to chmod file: /data/media/0/recovery.log. Error: No such file or directory
+I:Cannot find file /data/media/0/dmesg.log
+Kernel Log скопирован в /data/media/0/dmesg.log
+I:Cannot find file /data/media/0/logcat.txt
+Logcat скопирован в /data/media/0/logcat.txt
+recovery.log скопирован в /data/media/0/recovery.log.
+I:Set page: 'action_complete'
+I:operation_end - status=0
+I:Set page: 'clear_vars'
+I:Set page: 'advanced'
+I:Set page: 'filemanagerlist'
+I:Set page: 'advanced'
+I:Set page: 'sideload'
+I:Set page: 'advanced'
+I:Set page: 'filemanagerlist'
+I:Set page: 'advanced'
+I:Set page: 'terminalcommand'
+I:Set page: 'advanced'
+I:Unable to switch to Terminal
+I:Set page: 'main'
+I:Set page: 'clear_vars'
+I:Set page: 'main2'
+I:Set page: 'mount'
+I:operation_start: 'Stop MTP'
+I:Cannot find file /sys/class/android_usb/android0/idVendor
+I:Cannot find file /sys/class/android_usb/android0/idProduct
+I:Disabling MTP
+I:operation_end - status=0
+I:Set overlay: 'select_storage'
+I:Backup folder set to '/external_sd/TWRP/BACKUPS/Armor_X5'
+I:Set overlay: ''
+I:Set page: 'clear_vars'
+I:Set page: 'mount'
+I:Set page: 'main'
+I:Set page: 'clear_vars'
+I:Set page: 'main2'
+I:Set page: 'advanced'
+I:Set page: 'copylog'
+I:Set page: 'action_page'
+I:operation_start: 'Copy Log'
