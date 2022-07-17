@@ -14,12 +14,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 $(call inherit-product, device/ulefone/Armor_X5_Q/device.mk)
 
 # Inherit some common Omni stuff.
-$(call inherit-product, vendor/omni/config/common.mk)
-$(call inherit-product, vendor/omni/config/gsm.mk)
+#$(call inherit-product, vendor/omni/config/common.mk)
+#$(call inherit-product, vendor/omni/config/gsm.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := Armor_X5_Q
-PRODUCT_NAME := omni_Armor_X5_Q
+PRODUCT_NAME := twrp_Armor_X5_Q
 PRODUCT_BRAND := Ulefone
 PRODUCT_MODEL := Armor X5
 PRODUCT_MANUFACTURER := ulefone
