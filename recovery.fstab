@@ -20,7 +20,7 @@
 #/product                  ext4     product                                                  flags=display=product;logical
 
 /metadata                 ext4     /dev/block/platform/bootdevice/by-name/md_udc            flags=display=metadata
-/data                     ext4     /dev/block/platform/bootdevice/by-name/userdata          flags=encryptable=/dev/block/platform/bootdevice/by-name/metadata #flags=display=data
+/data                     ext4     /dev/block/platform/bootdevice/by-name/userdata          flags=encryptable=/dev/block/platform/bootdevice/by-name/md_udc #flags=display=data
 /cache                    ext4     /dev/block/platform/bootdevice/by-name/cache             flags=display=cache;backup=1
 #/mnt/vendor/protect_f     ext4     /dev/block/platform/bootdevice/by-name/protect1          flags=display=protect_f
 #/mnt/vendor/protect_s     ext4     /dev/block/platform/bootdevice/by-name/protect2          flags=display=protect_s
