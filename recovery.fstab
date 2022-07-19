@@ -1,25 +1,25 @@
-system /system ext4 ro wait,avb=vbmeta_system,logical,first_stage_mount,avb_keys=/avb/q-gsi.avbpubkey:/avb/r-gsi.avbpubkey:/avb/s-gsi.avbpubkey,
+#system /system ext4 ro wait,avb=vbmeta_system,logical,first_stage_mount,avb_keys=/avb/q-gsi.avbpubkey:/avb/r-gsi.avbpubkey:/avb/s-gsi.avbpubkey,
 
-vendor /vendor ext4 ro wait,avb,logical,first_stage_mount,
+#vendor /vendor ext4 ro wait,avb,logical,first_stage_mount,
 
-product /product ext4 ro wait,avb,logical,first_stage_mount,
+#product /product ext4 ro wait,avb,logical,first_stage_mount,
 
 # 155 "vendor/mediatek/proprietary/hardware/fstab/mt6765/fstab.in.mt6765"
 
-/dev/block/platform/bootdevice/by-name/md_udc /metadata ext4 noatime,nosuid,nodev,discard wait,check,formattable,first_stage_mount
-/dev/block/platform/bootdevice/by-name/userdata /data f2fs noatime,nosuid,nodev,discard,flush_merge,reserve_root=134217,resgid=1065,inlinecrypt,alloc_mode=reuse,fsync_mode=nobarrier,checkpoint_merge latemount,wait,check,quota,reservedsize=128M,formattable,resize,checkpoint=fs,fileencryption=aes-256-xts
-/dev/block/platform/bootdevice/by-name/para /misc emmc defaults defaults
+#/dev/block/platform/bootdevice/by-name/md_udc /metadata ext4 noatime,nosuid,nodev,discard wait,check,formattable,first_stage_mount
+#/dev/block/platform/bootdevice/by-name/userdata /data f2fs noatime,nosuid,nodev,discard,flush_merge,reserve_root=134217,resgid=1065,inlinecrypt,alloc_mode=reuse,fsync_mode=nobarrier,checkpoint_merge latemount,wait,check,quota,reservedsize=128M,formattable,resize,checkpoint=fs,fileencryption=aes-256-xts
+#/dev/block/platform/bootdevice/by-name/para /misc emmc defaults defaults
 
-/system         ext4  /dev/block/platform/bootdevice/by-name/system			    flags=backup=1;storage
-/system_image	emmc  /dev/block/platform/bootdevice/by-name/system   			    flags=display="system_image";backup=1;flashimg=1
-/vendor         ext4  /dev/block/platform/bootdevice/by-name/vendor			    flags=backup=1;wipeingui;storage
-/vendor_image	emmc  /dev/block/platform/bootdevice/by-name/vendor   			    flags=display="vendor_image";backup=1;flashimg=1
+#/system         ext4  /dev/block/platform/bootdevice/by-name/system			    flags=backup=1;storage
+#/system_image	emmc  /dev/block/platform/bootdevice/by-name/system   			    flags=display="system_image";backup=1;flashimg=1
+#/vendor         ext4  /dev/block/platform/bootdevice/by-name/vendor			    flags=backup=1;wipeingui;storage
+#/vendor_image	emmc  /dev/block/platform/bootdevice/by-name/vendor   			    flags=display="vendor_image";backup=1;flashimg=1
 
 #/system                   ext4     system                                                   flags=display=system;backup=1 #logical
 #/vendor                   ext4     vendor                                                   flags=display=vendor;wipeingui #logical
 #/product                  ext4     product                                                  flags=display=product;logical
 
-/metadata                 ext4     /dev/block/platform/bootdevice/by-name/md_udc            #flags=display=metadata
+/metadata                 ext4     /dev/block/platform/bootdevice/by-name/md_udc            flags=display=metadata
 /data                     ext4     /dev/block/platform/bootdevice/by-name/userdata          flags=encryptable=/dev/block/platform/bootdevice/by-name/metadata #flags=display=data
 /cache                    ext4     /dev/block/platform/bootdevice/by-name/cache             flags=display=cache;backup=1
 #/mnt/vendor/protect_f     ext4     /dev/block/platform/bootdevice/by-name/protect1          flags=display=protect_f
@@ -27,8 +27,8 @@ product /product ext4 ro wait,avb,logical,first_stage_mount,
 #/mnt/vendor/nvdata        ext4     /dev/block/platform/bootdevice/by-name/nvdata            flags=display=nvdata
 #/mnt/vendor/nvcfg         ext4     /dev/block/platform/bootdevice/by-name/nvcfg             flags=display=nvcfg
 #/mnt/vendor/persist       ext4     /dev/block/platform/bootdevice/by-name/persist           flags=display=persist
-#auto                      auto     /devices/platform/externdevice*                          flags=display=auto
-#auto                      vfat     /devices/platform/mt_usb*                                flags=display=auto
+auto                      auto     /devices/platform/externdevice*                          flags=display=auto
+auto                      vfat     /devices/platform/mt_usb*                                flags=display=auto
 
 /protect_f      	  ext4	   /dev/block/platform/bootdevice/by-name/protect1          flags=display="Protect";backup=1
 /protect_s      	  ext4     /dev/block/platform/bootdevice/by-name/protect2          flags=subpartitionof=/protect_f;backup=1
@@ -58,9 +58,9 @@ product /product ext4 ro wait,avb,logical,first_stage_mount,
 /expdb                    emmc     /dev/block/platform/bootdevice/by-name/expdb             flags=display=expdb;backup=1
 /seccfg                   emmc     /dev/block/platform/bootdevice/by-name/seccfg            flags=display=seccfg;backup=1
 /tee1                     emmc     /dev/block/platform/bootdevice/by-name/tee1              flags=display=tee1;backup=1;flashimg=1
-/tee2                     emmc     /dev/block/platform/bootdevice/by-name/tee2              flags=backup=1;subpartitionof=/tee1 #flags=display=tee2
+/tee2                     emmc     /dev/block/platform/bootdevice/by-name/tee2              flags=backup=1;subpartitionof=/tee1 # flags=display=tee2
 /scp1                     emmc     /dev/block/platform/bootdevice/by-name/scp1              flags=display=scp1;backup=1
-/scp2                     emmc     /dev/block/platform/bootdevice/by-name/scp2              flags=backup=1;subpartitionof=/scp1 #flags=display=scp2
+/scp2                     emmc     /dev/block/platform/bootdevice/by-name/scp2              flags=backup=1;subpartitionof=/scp1 # flags=display=scp2
 /sspm_1                   emmc     /dev/block/platform/bootdevice/by-name/sspm_1            flags=display=sspm_1;backup=1;subpartitionof=/spmfw
 /sspm_2                   emmc     /dev/block/platform/bootdevice/by-name/sspm_2            flags=display=sspm_2;backup=1;subpartitionof=/spmfw
 /md1img                   emmc     /dev/block/platform/bootdevice/by-name/md1img            flags=display=modem;backup=1
