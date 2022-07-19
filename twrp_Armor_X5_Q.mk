@@ -23,3 +23,16 @@ PRODUCT_NAME := twrp_Armor_X5_Q
 PRODUCT_BRAND := Ulefone
 PRODUCT_MODEL := Armor X5
 PRODUCT_MANUFACTURER := ulefone
+
+# Dynamic Partition
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
+
+# VNDK
+PRODUCT_TARGET_VNDK_VERSION := 29
+
+# API
+PRODUCT_SHIPPING_API_LEVEL := 29
+
+# Fastbootd
+PRODUCT_PACKAGES += \
+    android.hardware.fastboot@1.0-impl-mock
