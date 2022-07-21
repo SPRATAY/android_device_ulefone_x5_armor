@@ -18,10 +18,11 @@ service teei_daemon /vendor/bin/teei_daemon \
     -t 98fb95bcb4bf42d26473eae48690d7ea \
     -t 7b66512021214487ba710a51d7ea78fe \
     -t 09010000000000000000000000000000
-    user root
-    group root
+    class core
+    user system
+    group system
     disabled
-    seclabel u:r:recovery:s0
+   # oneshot
 
 on boot
     chown system system /sys/bus/platform/devices/utos/dcih_notify_test
@@ -126,6 +127,9 @@ on property:vold.decrypt=trigger_restart_framework
     mkdir /data/vendor/thh/tee_0E
     mkdir /data/vendor/thh/tee_0F
     mkdir /data/vendor/thh/ta
+    #prize wyq 20200221 for tee system-start
+    mkdir /data/vendor/key_provisioning
+    #prize wyq 20200221 for tee system-end
     chmod 0755 /data/vendor/thh
     chown system system /data/vendor/thh
     chmod 0755 /data/vendor/thh/tee_00
@@ -170,6 +174,10 @@ on property:vold.decrypt=trigger_restart_framework
     chmod 0755 /data/vendor/thh/system
     chown system system /data/vendor/thh/system
     restorecon_recursive /data/vendor/thh
+    #prize wyq 20200221 for tee system-end
+    chmod 0771 /data/vendor/key_provisioning
+    chown system system /data/vendor/key_provisioning
+    #prize wyq 20200221 for tee system-end
     write /proc/bootprof "start teei cfg end (on trigger_restart_framework)"
 
 on post-fs
@@ -193,7 +201,7 @@ on post-fs
     restorecon_recursive /persist
     restorecon_recursive /vendor/persist
 
-on post-fs
+on fs
     chmod 0660 /dev/teei_client
     chown system system /dev/teei_client
     chmod 0660 /dev/teei_config
@@ -215,9 +223,9 @@ on post-fs
     chown system system /dev/emmcrpmb0
     chown system system /dev/utr_tui
     chmod 0660 /dev/utr_tui
-    write /proc/bootprof "start teei_daemon (on post-fs)"
+    write /proc/bootprof "start teei_daemon (on fs)"
     start teei_daemon
-    write /proc/bootprof "start teei_daemon end (on post-fs)"
+    write /proc/bootprof "start teei_daemon end (on fs)"
 
 on property:vendor.crypto.fake_encrypt=1 && property:vold.post_fs_data_done=1
     setprop vendor.soter.teei.crypto.state unencrypted
