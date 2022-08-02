@@ -2,3 +2,4 @@ service vendor.keymaster-4-0-beanpod /vendor/bin/hw/android.hardware.keymaster@4
     class early_hal
     user system
     group system drmrpc
+    disabled
