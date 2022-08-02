@@ -30,8 +30,8 @@ service keystore /system/bin/keystore /tmp/misc/keystore
 #seclabel u:r:recovery:s0
 
 on property:hwservicemanager.ready=true
-    start keymaster-4-0
-    start gatekeeper-1-0
+    stop keymaster-4-0
+    stop gatekeeper-1-0
 
 on property:ro.crypto.state=unsupported
     stop teei_daemon
