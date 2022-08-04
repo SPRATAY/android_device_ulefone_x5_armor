@@ -31,8 +31,9 @@ service keystore /system/bin/keystore /tmp/misc/keystore
 
 on property:hwservicemanager.ready=true
     start teei_daemon
-    stop keymaster-4-0
-    stop gatekeeper-1-0
+    #stop keymaster-4-0
+    start keymaster-4-0-beanpod
+    start gatekeeper-1-0
 
 on property:ro.crypto.state=unsupported
     stop teei_daemon
