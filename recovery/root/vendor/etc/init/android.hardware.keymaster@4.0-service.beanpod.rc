@@ -1,5 +1,6 @@
 service vendor.keymaster-4-0-beanpod /vendor/bin/hw/android.hardware.keymaster@4.0-service.beanpod
-    class early_hal
-    user system
+    #class early_hal
+    user root #system
     group system drmrpc
     disabled
+    seclabel u:r:recovery:s0
