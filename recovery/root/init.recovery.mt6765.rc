@@ -30,9 +30,9 @@ service keystore /system/bin/keystore /tmp/misc/keystore
 #seclabel u:r:recovery:s0
 
 on property:hwservicemanager.ready=true
-    stop teei_daemon
-    stop vendor.keymaster-4-0-beanpod
-    stop vendor.gatekeeper-1-0
+    start teei_daemon
+    start vendor.keymaster-4-0-beanpod
+    start vendor.gatekeeper-1-0
 
 on property:ro.crypto.state=unsupported
     stop teei_daemon
