@@ -142,9 +142,10 @@ TARGET_USES_MKE2FS := true
 # Exclude
 TW_EXCLUDE_TWRPAPP := true
 
-# Debug
-TWRP_INCLUDE_LOGCAT := true
+# TWRP Debug Flags
+TWRP_EVENT_LOGGING := true
 TARGET_USES_LOGD := true
+TWRP_INCLUDE_LOGCAT := true
 
 # Hack: prevent anti rollback
 PLATFORM_SECURITY_PATCH := 2099-12-31
