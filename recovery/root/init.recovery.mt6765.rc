@@ -1,34 +1,40 @@
 import /vendor/etc/init/android.hardware.gatekeeper@1.0-service.rc
 import /vendor/etc/init/android.hardware.keymaster@4.0-service.beanpod.rc
 import /vendor/etc/init/microtrust.rc
-import /system/etc/init/keystore.rc
+#import /system/etc/init/keystore.rc
 
-on init
-    export LD_LIBRARY_PATH /system/lib64/:vendor/lib64:/vendor/lib64/hw
+
+
+service servicemanager /system/bin/servicemanager
+    user root
+    group root readproc
+    disabled
+    seclabel u:r:recovery:s0
+
+service keystore /system/bin/keystore /tmp/misc/keystore
+    user root
+    group root drmrpc readproc
+    disabled
+    seclabel u:r:recovery:s0
+    
+service keystore_auth /system/bin/keystore_auth
+    oneshot
+    user root
+    group root
+    disabled
+    seclabel u:r:recovery:s0
 
 on fs
     install_keyring
     setprop crypto.ready 1
+    start servicemanager
 
-#service keystore_auth /system/bin/keystore_auth
-#    oneshot
-#    user system
-#    group root
-#    disabled
-#    seclabel u:r:recovery:s0
-
-#service keystore /system/bin/keystore /tmp/misc/keystore
-#    user root
-#    group root drmrpc readproc
-#    disabled
-#    seclabel u:r:recovery:s0
-
-#service unified-script /vendor/bin/unified-script.sh
-#user root
-#group root
-#disabled
-#oneshot
-#seclabel u:r:recovery:s0
+on post-fs
+    # Support A/B feature for emmc boot region
+    symlink /dev/block/sda /dev/block/mmcblk0boot0
+    symlink /dev/block/sdb /dev/block/mmcblk0boot1
+    symlink /dev/block/mmcblk0boot0 /dev/block/platform/bootdevice/by-name/preloader_a
+    symlink /dev/block/mmcblk0boot1 /dev/block/platform/bootdevice/by-name/preloader_b
 
 on property:hwservicemanager.ready=true
     start teei_daemon
@@ -56,6 +62,3 @@ on property:twrp.decrypt.done=true
     stop servicemanager
     stop hwservicemanager
 
-#on boot
-#chmod 0777 /vendor/bin/unified-script.sh
-#start unified-script
