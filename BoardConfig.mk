@@ -139,6 +139,7 @@ TW_DEFAULT_BRIGHTNESS := 80
 TW_NO_SCREEN_BLANK_ON_BOOT := true
 TARGET_USES_MKE2FS := true
 TARGET_USE_CUSTOM_LUN_FILE_PATH := "/config/usb_gadget/g1/functions/mass_storage.usb0/lun.%d/file"
+TW_INCLUDE_FASTBOOTD := true
 
 # Exclude
 TW_EXCLUDE_TWRPAPP := true
