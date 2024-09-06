@@ -13,7 +13,7 @@
 /system_root		ext4	/dev/block/mapper/system				flags=backup=0;display="System"↴
 /system_image		emmc	/dev/block/mapper/system				flags=backup=1;display="System⋅Image"↴
 /vendor			ext4	/dev/block/mapper/vendor				flags=backup=0;mounttodecrypt;display="Vendor"↴
-/vendor_image		emmc	/dev/block/mapper/vendor				flags=backup=1;display="Vendor⋅Image"↴
+/vendor_image		emmc	/dev/block/mapper/vendor				flags=backup=1;mounttodecrypt;display="Vendor⋅Image"↴
 /product		ext4	/dev/block/mapper/product				flags=backup=0;display="Product"↴
 /product_image		emmc	/dev/block/mapper/product				flags=backup=1;display="Product⋅Image"↴
 
